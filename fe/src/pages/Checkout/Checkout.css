@@ -1,0 +1,51 @@
+.booking__header{
+}
+.booking__heading{
+    font: 30px 'aleobold', sans-serif;
+    color: #4c4145;
+    margin: 10px 0 0;
+}   
+.booking__title{
+    color: #4c4145;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.booking__body::before{
+    content:'';
+    position: absolute;
+    width: 50%;
+    height:5px;
+    background-color: #969B9F;
+    top: -5%;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.chair{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 30px;
+    /* margin:auto */
+}
+.chair.booked{
+    background-color:brown;
+    cursor: no-drop;
+}
+.chair.booking{
+    background-color: green;
+    color: #fff;
+}
+@media (max-width: 639.98px) {
+    .booking__body--chairs{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .booking__chairs, .booking_infor{
+        grid-column: 1 / span 12;
+    }
+    .booking_infor{
+        margin-top: 20px;
+    }
+}

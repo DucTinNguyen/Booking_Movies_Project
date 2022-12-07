@@ -1,0 +1,53 @@
+.introduction{
+    background-image: url('./image/movie_details_bg.jpg')
+}
+
+.movie__image{
+
+}
+.movie__image--active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.movie__image:hover .movie__image--active{
+    opacity: 1;
+}
+
+.showtimes{
+    margin:auto;
+    padding:35px 120px 
+}
+@media (min-width:500px) and (max-width:767.98px) {
+    .showtimes{
+        padding: 15px;
+    }
+}
+
+
+@media (max-width:639.98px) {
+    .introduce__left, .introduce__right{
+        grid-column: 1 / span 8;
+    }
+}
+/* custom antd tabs */
+.ant-tabs.ant-tabs-left.ant-tabs-tab{
+    justify-content: center;
+    align-items: flex-start;
+}
+.cinestars{
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+}
+.swiper-slide{
+    text-align: center;
+}

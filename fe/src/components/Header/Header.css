@@ -1,0 +1,26 @@
+.sub_user{
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition:all linear 0.3s;
+}
+.sub_user > li {
+    margin-bottom: 5px;
+    padding: 2px 16px;
+}
+.sub_user > li:nth-last-child(1){
+    margin-bottom:0
+}
+.user:hover .sub_user{
+    visibility:visible;
+    opacity: 1;
+}
+/* media */
+@media (max-width:639.98px){
+    .user{
+        display:none
+    }
+}

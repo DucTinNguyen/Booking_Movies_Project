@@ -1,0 +1,35 @@
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.loading__ball{
+    background-color: #06c;
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    animation: buble 2s infinite linear;
+}
+.ball--1{
+    animation-delay: -1;
+}
+.ball--2{
+    animation-delay:-1.2;
+}
+@keyframes buble {
+    0%,
+    20%,
+    40%,
+    80%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
